@@ -15,3 +15,5 @@ dist/assets/intro-synced.mp4
 dist/assets/studio.png
 dist/assets/chewy.ttf
 dist/assets/chewy-LICENSE.txt
+.vercel
+.env*
