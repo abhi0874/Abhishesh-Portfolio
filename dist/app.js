@@ -13,7 +13,7 @@ function updateScroll(){const extent=document.documentElement.scrollHeight-inner
 const welcome=document.querySelector('#welcome');
 let entered=false;
 welcome.showModal();
-function enter(){
+function enter(event){
   if(entered)return;
   entered=true;
   welcome.close();
@@ -21,7 +21,10 @@ function enter(){
   window.scrollTo({top:0,behavior:'instant'});
   heroVisible=true;
   playWelcome();
-  document.querySelector('.hero-bottom a').focus({preventScroll:true});
+  // Transfer focus for keyboard/assistive activation, not a mouse click or tap.
+  if(event.detail===0&&!event.pointerType){
+    document.querySelector('.hero-bottom a').focus({preventScroll:true});
+  }
 }
 document.querySelector('#enter').addEventListener('click',enter);
 welcome.addEventListener('cancel',event=>event.preventDefault());
