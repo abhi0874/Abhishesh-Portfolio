@@ -1,0 +1,14 @@
+.git/
+.openai/
+preview*
+VERIFICATION.md
+ASSET-PROMPTS.md
+GOOGLE-FLOW-PROMPT.md
+Google-Flow-Starting-Frame.png
+.DS_Store
+dist/.DS_Store
+dist/assets/intro.mp4
+dist/assets/intro-synced.mp4
+dist/assets/studio.png
+dist/assets/chewy.ttf
+dist/assets/chewy-LICENSE.txt

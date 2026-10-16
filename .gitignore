@@ -1,0 +1,17 @@
+.DS_Store
+node_modules/
+.vercel/
+.openai/
+.env
+.env.*
+!.env.example
+preview*
+VERIFICATION.md
+ASSET-PROMPTS.md
+GOOGLE-FLOW-PROMPT.md
+Google-Flow-Starting-Frame.png
+dist/assets/intro.mp4
+dist/assets/intro-synced.mp4
+dist/assets/studio.png
+dist/assets/chewy.ttf
+dist/assets/chewy-LICENSE.txt
